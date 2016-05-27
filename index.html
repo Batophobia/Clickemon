@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clickémon</title>
+    <meta name="description" content="Clickémon is an incremental game based on Pokémon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+   <div class="everything">
+    <div id="buttons" class="topBar">
+      <button id="btnMap">Explore</button>
+      <button id="btnStop">Retreat</button>
+    </div>
+    <div id='army' class='leftBar'>
+		<div class="pikminMenu" style="background:#F62E30" id="redBlock"></div>
+	</div>
+    <div id='items' class='rightBar'><div class="rightTitle">Inventory</div>
+		<div class="bombs"></div>
+		<div class="stuff"><div class="rightTitle">Things</div></div>
+	</div>
+	<div class="mainBar">
+	</div>
+	
+	<script>
+		$(document).ready(function(){
+			main.init();
+		});
+	</script>
+  </body>
+</html>
